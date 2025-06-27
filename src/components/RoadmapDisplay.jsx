@@ -1,5 +1,5 @@
 import React from 'react';
-import { ExternalLink, BookOpen, Code, Target, Youtube, FileText } from 'lucide-react';
+import { ExternalLink, BookOpen, Code, Target, Youtube, FileText, Calendar, CheckCircle } from 'lucide-react';
 
 export default function RoadmapDisplay({ roadmap, onBack }) {
   if (!roadmap) return null;
@@ -117,13 +117,65 @@ export default function RoadmapDisplay({ roadmap, onBack }) {
         </div>
       )}
 
-      {/* JSON Export */}
+      {/* Roadmap Summary in English */}
       <div className="card">
-        <h2 className="text-xl font-bold text-gray-900 mb-4">Roadmap Data (JSON)</h2>
-        <div className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto">
-          <pre className="text-sm">
-            {JSON.stringify(roadmap, null, 2)}
-          </pre>
+        <h2 className="text-xl font-bold text-gray-900 mb-4 flex items-center">
+          <Calendar className="w-5 h-5 mr-2 text-primary-600" />
+          Your Learning Journey Summary
+        </h2>
+        
+        <div className="space-y-4 text-gray-700">
+          <div className="bg-blue-50 p-4 rounded-lg">
+            <h3 className="font-semibold text-blue-900 mb-2">📋 Overview</h3>
+            <p className="text-blue-800">
+              Your personalized learning roadmap consists of <strong>{roadmap.learning_path.length} stages</strong> designed to help you achieve your career goals. 
+              Each stage builds upon the previous one, ensuring a structured and comprehensive learning experience.
+            </p>
+          </div>
+
+          <div className="bg-green-50 p-4 rounded-lg">
+            <h3 className="font-semibold text-green-900 mb-2">🎯 What You'll Learn</h3>
+            <p className="text-green-800 mb-3">
+              Throughout your journey, you'll master <strong>{Object.keys(roadmap.free_resources).length} key skills</strong> including:
+            </p>
+            <div className="flex flex-wrap gap-2">
+              {Object.keys(roadmap.free_resources).map((skill, index) => (
+                <span key={index} className="inline-flex items-center px-2 py-1 rounded-full text-xs bg-green-100 text-green-800 font-medium">
+                  <CheckCircle className="w-3 h-3 mr-1" />
+                  {skill}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          <div className="bg-purple-50 p-4 rounded-lg">
+            <h3 className="font-semibold text-purple-900 mb-2">💡 Learning Approach</h3>
+            <ul className="text-purple-800 space-y-1 text-sm">
+              <li>• <strong>Start with fundamentals</strong> and progress to advanced concepts</li>
+              <li>• <strong>Practice with hands-on projects</strong> after each major stage</li>
+              <li>• <strong>Use both documentation and video tutorials</strong> for comprehensive learning</li>
+              <li>• <strong>Focus on practical application</strong> through real-world projects</li>
+            </ul>
+          </div>
+
+          <div className="bg-orange-50 p-4 rounded-lg">
+            <h3 className="font-semibold text-orange-900 mb-2">📚 Available Resources</h3>
+            <p className="text-orange-800">
+              You have access to <strong>{Object.keys(roadmap.free_resources).length * 2} learning resources</strong> including official documentation and video tutorials. 
+              Each skill comes with carefully curated links to help you learn effectively.
+            </p>
+          </div>
+
+          <div className="bg-gray-50 p-4 rounded-lg">
+            <h3 className="font-semibold text-gray-900 mb-2">🚀 Next Steps</h3>
+            <ol className="text-gray-800 space-y-1 text-sm">
+              <li>1. <strong>Begin with Stage 1</strong> and work through each topic systematically</li>
+              <li>2. <strong>Complete the suggested project</strong> for each stage to reinforce learning</li>
+              <li>3. <strong>Use the provided resources</strong> to deepen your understanding</li>
+              <li>4. <strong>Track your progress</strong> and celebrate milestones along the way</li>
+              <li>5. <strong>Build a portfolio</strong> of projects to showcase your skills</li>
+            </ol>
+          </div>
         </div>
       </div>
     </div>
