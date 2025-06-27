@@ -127,53 +127,200 @@ export const careerPaths = {
 };
 
 export const freeResources = {
-  "HTML": "https://developer.mozilla.org/en-US/docs/Learn/HTML",
-  "CSS": "https://developer.mozilla.org/en-US/docs/Learn/CSS",
-  "JavaScript": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
-  "React": "https://react.dev/learn",
-  "TypeScript": "https://www.typescriptlang.org/docs/",
-  "Python": "https://docs.python.org/3/tutorial/",
-  "Node.js": "https://nodejs.org/en/docs/",
-  "Express.js": "https://expressjs.com/",
-  "MongoDB": "https://docs.mongodb.com/",
-  "SQL": "https://www.w3schools.com/sql/",
-  "Git": "https://git-scm.com/doc",
-  "Docker": "https://docs.docker.com/",
-  "Kubernetes": "https://kubernetes.io/docs/",
-  "Terraform": "https://www.terraform.io/docs",
-  "Pandas": "https://pandas.pydata.org/docs/",
-  "NumPy": "https://numpy.org/doc/",
-  "Scikit-learn": "https://scikit-learn.org/stable/",
-  "Matplotlib": "https://matplotlib.org/",
-  "Seaborn": "https://seaborn.pydata.org/",
-  "ES6+": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide",
-  "State Management": "https://redux.js.org/introduction/getting-started",
-  "CSS Frameworks": "https://tailwindcss.com/docs",
-  "Build Tools": "https://webpack.js.org/concepts/",
-  "Performance Optimization": "https://web.dev/performance/",
-  "Testing": "https://jestjs.io/docs/getting-started",
-  "Deployment": "https://vercel.com/docs",
-  "Authentication": "https://auth0.com/docs",
-  "Database Design": "https://www.postgresql.org/docs/",
-  "API Security": "https://owasp.org/www-project-api-security/",
-  "Microservices": "https://microservices.io/",
-  "Cloud Deployment": "https://aws.amazon.com/getting-started/",
-  "Statistics": "https://www.khanacademy.org/math/statistics-probability",
-  "Data Cleaning": "https://pandas.pydata.org/docs/user_guide/missing_data.html",
-  "Machine Learning Algorithms": "https://scikit-learn.org/stable/supervised_learning.html",
-  "Model Evaluation": "https://scikit-learn.org/stable/modules/model_evaluation.html",
-  "Deep Learning": "https://pytorch.org/tutorials/",
-  "MLOps": "https://mlops.community/",
-  "Model Deployment": "https://mlflow.org/docs/latest/index.html",
-  "Linux": "https://www.linux.org/docs/",
-  "Networking": "https://www.cisco.com/c/en/us/solutions/small-business/resource-center/networking/networking-basics.html",
-  "Shell Scripting": "https://www.gnu.org/software/bash/manual/",
-  "CI/CD": "https://www.jenkins.io/doc/",
-  "Cloud Platforms": "https://aws.amazon.com/getting-started/",
-  "Ansible": "https://docs.ansible.com/",
-  "Monitoring": "https://prometheus.io/docs/",
-  "Logging": "https://www.elastic.co/guide/index.html",
-  "Security": "https://owasp.org/",
-  "Performance": "https://web.dev/performance/",
-  "Disaster Recovery": "https://aws.amazon.com/disaster-recovery/"
+  "HTML": {
+    docs: "https://developer.mozilla.org/en-US/docs/Learn/HTML",
+    youtube: "https://www.youtube.com/watch?v=UB1O30fR-EE"
+  },
+  "CSS": {
+    docs: "https://developer.mozilla.org/en-US/docs/Learn/CSS",
+    youtube: "https://www.youtube.com/watch?v=yfoY53QXEnI"
+  },
+  "JavaScript": {
+    docs: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+    youtube: "https://www.youtube.com/watch?v=W6NZfCO5SIk"
+  },
+  "React": {
+    docs: "https://react.dev/learn",
+    youtube: "https://www.youtube.com/watch?v=bMknfKXIFA8"
+  },
+  "TypeScript": {
+    docs: "https://www.typescriptlang.org/docs/",
+    youtube: "https://www.youtube.com/watch?v=BwuLxPH8IDs"
+  },
+  "Python": {
+    docs: "https://docs.python.org/3/tutorial/",
+    youtube: "https://www.youtube.com/watch?v=_uQrJ0TkZlc"
+  },
+  "Node.js": {
+    docs: "https://nodejs.org/en/docs/",
+    youtube: "https://www.youtube.com/watch?v=Oe421EPjeBE"
+  },
+  "Express.js": {
+    docs: "https://expressjs.com/",
+    youtube: "https://www.youtube.com/watch?v=L72fhGm1tfE"
+  },
+  "MongoDB": {
+    docs: "https://docs.mongodb.com/",
+    youtube: "https://www.youtube.com/watch?v=pWbMrx5rVBE"
+  },
+  "SQL": {
+    docs: "https://www.w3schools.com/sql/",
+    youtube: "https://www.youtube.com/watch?v=HXV3zeQKqGY"
+  },
+  "Git": {
+    docs: "https://git-scm.com/doc",
+    youtube: "https://www.youtube.com/watch?v=SWYqp7iY_TQ"
+  },
+  "Docker": {
+    docs: "https://docs.docker.com/",
+    youtube: "https://www.youtube.com/watch?v=fqMOX6JJhGo"
+  },
+  "Kubernetes": {
+    docs: "https://kubernetes.io/docs/",
+    youtube: "https://www.youtube.com/watch?v=B53sG0VLxNQ"
+  },
+  "Terraform": {
+    docs: "https://www.terraform.io/docs",
+    youtube: "https://www.youtube.com/watch?v=SLB_c_ayRMo"
+  },
+  "Pandas": {
+    docs: "https://pandas.pydata.org/docs/",
+    youtube: "https://www.youtube.com/watch?v=dcqPhpY7tWk"
+  },
+  "NumPy": {
+    docs: "https://numpy.org/doc/",
+    youtube: "https://www.youtube.com/watch?v=QUT1VHiLmmI"
+  },
+  "Scikit-learn": {
+    docs: "https://scikit-learn.org/stable/",
+    youtube: "https://www.youtube.com/watch?v=0B5eIE_1vpU"
+  },
+  "Matplotlib": {
+    docs: "https://matplotlib.org/",
+    youtube: "https://www.youtube.com/watch?v=3Xc3CA655Y4"
+  },
+  "Seaborn": {
+    docs: "https://seaborn.pydata.org/",
+    youtube: "https://www.youtube.com/watch?v=6GUZXDef2U0"
+  },
+  "ES6+": {
+    docs: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide",
+    youtube: "https://www.youtube.com/watch?v=NCwa_xi0Uuc"
+  },
+  "State Management": {
+    docs: "https://redux.js.org/introduction/getting-started",
+    youtube: "https://www.youtube.com/watch?v=CVpUuw9XSjY"
+  },
+  "CSS Frameworks": {
+    docs: "https://tailwindcss.com/docs",
+    youtube: "https://www.youtube.com/watch?v=4wGmylzf-gU"
+  },
+  "Build Tools": {
+    docs: "https://webpack.js.org/concepts/",
+    youtube: "https://www.youtube.com/watch?v=GU-2T7k9NfI"
+  },
+  "Performance Optimization": {
+    docs: "https://web.dev/performance/",
+    youtube: "https://www.youtube.com/watch?v=exB0WbqRhyQ"
+  },
+  "Testing": {
+    docs: "https://jestjs.io/docs/getting-started",
+    youtube: "https://www.youtube.com/watch?v=7rTTxqa2imA"
+  },
+  "Deployment": {
+    docs: "https://vercel.com/docs",
+    youtube: "https://www.youtube.com/watch?v=1ZoOAq1g6oo"
+  },
+  "Authentication": {
+    docs: "https://auth0.com/docs",
+    youtube: "https://www.youtube.com/watch?v=wAeV6Lx_CDE"
+  },
+  "Database Design": {
+    docs: "https://www.postgresql.org/docs/",
+    youtube: "https://www.youtube.com/watch?v=ztHopE5Wnpc"
+  },
+  "API Security": {
+    docs: "https://owasp.org/www-project-api-security/",
+    youtube: "https://www.youtube.com/watch?v=2pIJoPkh9IU"
+  },
+  "Microservices": {
+    docs: "https://microservices.io/",
+    youtube: "https://www.youtube.com/watch?v=j6ow-UemzBc"
+  },
+  "Cloud Deployment": {
+    docs: "https://aws.amazon.com/getting-started/",
+    youtube: "https://www.youtube.com/watch?v=Ia-UEYYR44s"
+  },
+  "Statistics": {
+    docs: "https://www.khanacademy.org/math/statistics-probability",
+    youtube: "https://www.youtube.com/watch?v=xxpc-HPKN28"
+  },
+  "Data Cleaning": {
+    docs: "https://pandas.pydata.org/docs/user_guide/missing_data.html",
+    youtube: "https://www.youtube.com/watch?v=K19dN_wXjWo"
+  },
+  "Machine Learning Algorithms": {
+    docs: "https://scikit-learn.org/stable/supervised_learning.html",
+    youtube: "https://www.youtube.com/watch?v=KNAWp2S3w94"
+  },
+  "Model Evaluation": {
+    docs: "https://scikit-learn.org/stable/modules/model_evaluation.html",
+    youtube: "https://www.youtube.com/watch?v=85dtiMz9tSo"
+  },
+  "Deep Learning": {
+    docs: "https://pytorch.org/tutorials/",
+    youtube: "https://www.youtube.com/watch?v=VyWAvY2CF3c"
+  },
+  "MLOps": {
+    docs: "https://mlops.community/",
+    youtube: "https://www.youtube.com/watch?v=9BgIDqAzfuA"
+  },
+  "Model Deployment": {
+    docs: "https://mlflow.org/docs/latest/index.html",
+    youtube: "https://www.youtube.com/watch?v=6gdzJ9Sa98g"
+  },
+  "Linux": {
+    docs: "https://www.linux.org/docs/",
+    youtube: "https://www.youtube.com/watch?v=ROjZy1WbCIA"
+  },
+  "Networking": {
+    docs: "https://www.cisco.com/c/en/us/solutions/small-business/resource-center/networking/networking-basics.html",
+    youtube: "https://www.youtube.com/watch?v=qiQR5rTSshw"
+  },
+  "Shell Scripting": {
+    docs: "https://www.gnu.org/software/bash/manual/",
+    youtube: "https://www.youtube.com/watch?v=v-F3YLd6oMw"
+  },
+  "CI/CD": {
+    docs: "https://www.jenkins.io/doc/",
+    youtube: "https://www.youtube.com/watch?v=1er2cjUq1UI"
+  },
+  "Cloud Platforms": {
+    docs: "https://aws.amazon.com/getting-started/",
+    youtube: "https://www.youtube.com/watch?v=Ia-UEYYR44s"
+  },
+  "Ansible": {
+    docs: "https://docs.ansible.com/",
+    youtube: "https://www.youtube.com/watch?v=fHO1X93e4WA"
+  },
+  "Monitoring": {
+    docs: "https://prometheus.io/docs/",
+    youtube: "https://www.youtube.com/watch?v=h4Sl21AKiDg"
+  },
+  "Logging": {
+    docs: "https://www.elastic.co/guide/index.html",
+    youtube: "https://www.youtube.com/watch?v=9SIjoeRe93w"
+  },
+  "Security": {
+    docs: "https://owasp.org/",
+    youtube: "https://www.youtube.com/watch?v=2pIJoPkh9IU"
+  },
+  "Performance": {
+    docs: "https://web.dev/performance/",
+    youtube: "https://www.youtube.com/watch?v=exB0WbqRhyQ"
+  },
+  "Disaster Recovery": {
+    docs: "https://aws.amazon.com/disaster-recovery/",
+    youtube: "https://www.youtube.com/watch?v=8jLOlo1Tg8Y"
+  }
 }; 
